@@ -1,0 +1,47 @@
+#cabecera{
+	min-height:180px;
+	background-color:#ADFF2F;	  
+}
+#menuizq{
+	min-height:1380px;
+	float:left;
+	background-color:#008B8B;
+	width: 300px;  
+}
+#presentacion{
+	background-color: #000000;
+	margin-left: 0;
+	min-height: 360px;
+	max-width:auto; 
+}
+#noticias{
+	background-color: #8899AA;
+	width: 46%;
+	float: right; 
+	min-height:1380px;
+}
+#videos{
+	background-color:#112233;
+	width: 30%; 
+	float: left; 
+	min-height:1380px;
+}
+#pie{
+	background-color: #000000;
+	min-height: 200px;
+}
+#tabla td {
+	text-align:center;
+	background-color:#008B8B; 
+	width: 50%
+}
+#tabla td:hover{
+	background-color:#000000;
+}
+a{
+	text-decoration:none;
+}
+#sony {
+    width:250px;
+    height: 75px;
+   }

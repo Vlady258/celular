@@ -1,0 +1,41 @@
+#menuizq{
+	min-height:1000px;
+	float:left;
+	background-color:#008B8B;
+	width: 275px;  
+}
+#presentacion{
+	background-color: #000000;
+	width:100%;
+	min-height: 360px;
+}
+#cuerpo{
+	background-color: #FFFFFF;
+	margin-left: 350px;
+	min-height: 1000px;
+}
+#pie{
+	background-color: #202BAA;
+	min-height: 200px;
+}
+div.jMyCarousel  {   margin-top: 450px; height: 200px !important; margin-left: 0px; padding-left: 0px;}
+div.jMyCarousel .prev  {   background: url('../img/left.png') center center no-repeat; width:47px; height:61px; border:0px; }
+div.jMyCarousel .next  {   background: url('../img/right.png') center center no-repeat; width:40px; height:61px; border:0px; }
+div.jMyCarousel ul li   {   margin:0px; line-height:0px; padding:0px; }
+div.jMyCarousel ul li a  {   display:block; }
+div.jMyCarousel ul li img   {   display:block; border:0px; margin: 0px 5px 0px;}
+#contenido_galeria {   position: relative; height: 350px;}
+#contenido_galeria img  {   float: left; width: 950px;}
+#contenido_galeria p {   width: 270px; position: absolute; top: 0px; left: 730px; }
+#tam{
+	width: 200px;
+	height: 600px;
+}
+#fondo{
+	width:100%;
+	min-height: 360px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
