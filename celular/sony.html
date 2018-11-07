@@ -1,0 +1,130 @@
+<html>
+<head>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.form.js"></script>
+    <script type="text/javascript" src="../js/funciones.js"></script>
+	<link rel="stylesheet" href="../css/hoja2.css" type="text/css" media="screen" charset="utf-8">
+  <title>CELUMANIATICOS.NET</title>
+</head>
+<div id="presentacion">
+  <img src="../img/FONDO.jpg" id="fondo">
+	</div>
+	<div id="menuizq">
+    <table width="100%" id="tabla" border="0" cellpadding="5" cellspacing="10" bordercolor="#000000" bgcolor="#008B8B">
+  <tr bgcolor="#008B8B">
+  </tr>
+    <th><font color="white">MENU</font></th>
+  <th>
+  </th>
+  <tr>
+        <td><a href="#"class="botton"><img src="../img/son.jpg" id="sony"></a></td>
+  </tr>
+  <th>
+  </th>
+  <tr bgcolor="#008B8B">
+    <td><a href="#"class="botton"><img src="../img/l.jpg" id="sony"></a></td>
+
+  </tr>
+  </tr>
+  <th>
+  </th>
+  <tr bgcolor="#008B8B">
+    <td><a href="#"class="botton"><img src="../img/samsun.jpg" id="sony"></a></td>
+  </tr>
+  <th>
+  </th>
+  <tr bgcolor="#008B8B">
+    <td><a href="#" class="botton"><img src="../img/iphon.jpg" id="sony"></a></td>
+  </tr>
+  <th>
+  </th>
+  <tr bgcolor="#008B8B">
+     <td><a href="#"class="botton"><img src="../img/noki.jpg" id="sony"></a></td>
+  </tr>
+  <th>
+  </th>
+  <tr>
+    <td><center><a href="../index.html"><h3>INICIO</h3></a></center></td>
+  </tr>
+</table>
+  </div>
+	</div>
+	<div id="cuerpo">
+<div id="contenido_galeria">
+  <div id="imagen1">
+    <center><H1>XPERIA Z4</H1></center>
+    <center><img src="../img/cara z4.jpg" alt="" id="tam" /></center>
+  </div>
+  <div id="imagen2">
+    <center><H1>XPERIA E4G</H1></center>
+    <center><img src="../img/carac e4g.jpg" alt="" height="700"/></center>
+  </div>  
+  <div id="imagen3">
+    <center><H1>XPERIA  I4</H1></center>
+    <center><img src="../img/cara i4.jpg" alt="" id="tam"/></center>
+ </div>
+  <div id="imagen4">
+    <center><H1>XPERIA M2</H1></center>
+    <center><img src="../img/cara m2.jpg" alt="" id="tam"/></center>
+  </div>
+  <div id="imagen5">
+    <center><H1>XPERIA C3</H1></center>
+    <center><img src="../img/cara c3.jpg" alt="" id="tam"/></center>
+  </div>
+</div><!-- fin div contenido-galeria -->
+<div class="jMyCarousel">
+    <ul>
+        <li><a href="#imagen1" title=""><img src="../img/z4.jpg"alt="" /></a></li>
+        <li><a href="#imagen2" title=""><img src="../img/ee4.jpg"alt="" /></a></li>
+        <li><a href="#imagen3" title=""><img src="../img/ii41.jpg"alt="" /></a></li>
+        <li><a href="#imagen4" title=""><img src="../img/mm2.jpg"alt="" /></a></li>
+        <li><a href="#imagen5" title=""><img src="../img/cc3.jpg"alt="" /></a></li>
+    </ul>
+</div><!-- Fin div jMyCarousel -->
+</div>
+<div id="pie">
+  <marquee>
+    <img src="../img/bannerpie2.jpg">
+  </marquee>
+</div>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js?ver=1.4.4'></script>
+<script type="text/javascript" src="../js/jMyCarousel.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+    $(".jMyCarousel").jMyCarousel({ // Script de los Thumbnails
+    visible: '100%',
+    eltByElt: true
+    });
+$(".jMyCarousel img").fadeTo(100, 0.6);
+$(".jMyCarousel a img").hover(
+    function(){ //mouse over
+       $(this).fadeTo(400, 1);
+    },
+    function(){ //mouse out
+      $(this).fadeTo(400, 0.6);
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){ // Script de la Galeria
+    $('#contenido_galeria div').css('position', 'absolute').not(':first').hide();
+    $('#contenido_galeria div:first').addClass('aqui');
+    $('.jMyCarousel a').click(function(){
+        $('#contenido_galeria div.aqui').fadeOut(400);
+        $('#contenido_galeria div').removeClass('aqui').filter(this.hash).fadeIn(400).addClass('aqui');
+        return false;
+    });
+ });
+</script> 
+</html>
+<script language="javascript">
+ $(document).ready(function(){
+ 
+  $('.botton').click(function(){      
+  $("#cuerpo").load($(this).attr('href1'));   
+    
+  }); 
+    
+});
+</script>
